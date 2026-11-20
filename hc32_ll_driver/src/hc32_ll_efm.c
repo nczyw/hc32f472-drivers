@@ -384,6 +384,8 @@ static int32_t Program_Prepare(uint32_t u32Addr, uint32_t u32ByteLen, uint32_t *
  */
 static int32_t Program_Recover(uint32_t u32Addr, uint32_t u32ByteLen, uint32_t *pu32CacheTemp, int32_t i32Status)
 {
+    (void)u32Addr;
+    (void)u32ByteLen;
     int32_t i32Ret = i32Status;
 
     /* Set to read only mode */
